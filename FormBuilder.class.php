@@ -3,7 +3,7 @@
 require_once 'DBConnection.class.php';
 
 
-class ClassBuilder{
+class FormBuilder{
     private $path       = ""; //Basicamente esse é o atributo da classe atrelado ao caminho (destino) dos arquivos que serão gerados
     private $schemaName = ""; //Esse atributo está relacionado ao nome do Banco de Dados que será manipulado
     private $conn       = null;//Será o responsável por instanciar a minha classe DBCONNECTION
@@ -57,80 +57,53 @@ class ClassBuilder{
         return ( $result );//retorna o valor da variável
     }
     
-    public function make() { //Aqui temos a função make, principal responsável por gerar meu arquivo que conterá determinada classe
-        // echo "<hr>".$this->getSchemaName();
-        $tables = $this->listTables($this->getSchemaName());  // Essa variável armazena o método que lista as tabelas do meu DB e passamos como parâmetro, o getter que me retorna o nome do meu Banco de Dados, o qual é necessário na minha consulta do list tables
-        $strOut = ""; // Basicamente é uma variável relacionada a saída de strings, ou seja, será responsável pela saída dos meus textos, os quais serão importantes para gerar o conteúdo da class
-        while ($linhaAtualTables = mysqli_fetch_assoc($tables)) {// Aqui podemos observar que enquanto a variável linhaAtualTables for recebendo a quantidade de linhas presentes na matriz associativa que se refere as tabelas, esse while será executado
+    public function makeForm() { 
+    
+        $tables = $this->listTables();
+        var_dump($tables);
+        $strOut = ""; 
+        while ($linhaAtualTables = mysqli_fetch_assoc($tables)) {
+
+            $strOut .= "<!DOCTYPE html>";
+            $strOut .=  "\n". "<html lang='en'>";
+            $strOut .=  "\n"."<head>";
+            $strOut .=  "\n\t"."<title>Form PHP</title>";
+            $strOut .=  "\n\t"."<meta charset='utf-8'>";
+            $strOut .=  "\n\t"."<meta name='viewport' content='width=device-width, initial-scale=1'>";
+            $strOut .=  "\n\t"."<meta name='viewport' content='width=device-width, initial-scale=1'>";
+            $strOut .=  "\n\t"."<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>";
+            $strOut .=  "\n\t"."<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>";
+            $strOut .=  "\n\t"."<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>";
+            $strOut .=  "\n\t"."<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>";
+            $strOut .=  "\n\t"."<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>";
+            $strOut .=  "\n"."</head>";
+
+            $tableName = $linhaAtualTables['TABLE_NAME'];
+
+            $strOut.= "\n"."<body>"."\n\t"."<div class='container m-5 p-5'>"."\n\t\t"."<h2>Insert form</h2>"."\n\t\t"."<form action='' method='post' "." id= ". ucfirst($tableName). ">" ;
             
-            $tableName = $linhaAtualTables['TABLE_NAME']; //Essa variável vai armazenar cada uma das tabelas, sendo que ela utiliza o linha atual das tabelas unido à coluna table name do sql para conseguir acessar cada um dos itens presentes nessa matriz
-            //  echo "<hr> TABLE_NAME:" . $tableName;
-            $strOut .= "<?php";
-            $strOut .= "\n\t"."class ". ucfirst($tableName) ." {\n";
+             //Essa variável vai armazenar cada uma das tabelas, sendo que ela utiliza o linha atual das tabelas unido à coluna table name do sql para conseguir acessar cada um dos itens presentes nessa matriz
+            //echo "<hr> TABLE_NAME:" . $tableName;
             $columnsData = $this->listTableColumns( $tableName );
-            $columns = array();  //Da linha 68 à 71 está sendo realizada a primeira parte da nossa classe, ou seja, estamos gerando o título da classe e depois armazenando os titulos das colunas das respectivas classes, utilizando o listar colunas das tabelas e passando a variável que armazena o nome específico da tabela necessária. O columns recebe a função array(), que gera uma matriz e me permite trabalhar com as colunas, já que estarão dispostas em um array associativo
-            
+            //var_dump($columnsData);
+            $columns = array();  
+
             while ($linhaColumns = mysqli_fetch_assoc($columnsData)) { //Lembrando que isso só será executado enquanto ainda houver uma  quantidade de linhas da matriz para ser retornada e se refere aos titulos das colunas da classe que está sendo criada. Agora chegou a hora de criar os atributos da minha classe e as colunas da minha classe serão esses atributos
-                array_push($columns, $linhaColumns['COLUMN_NAME']);//Esse array push me permite empurrar os valores presentes em linhaColumns para o meu array criado na variável columns, ou seja, agora nós temos efetivamente uma matriz associativa com todos os títulos das colunas da tabela criada inicialmente
+                array_push($columns, $linhaColumns['COLUMN_NAME']);
+                //echo $linhaColumns['COLUMN_NAME']."<br>";
+                //var_dump($columns);    
             }
-            
+
             for ($i=0; $i < count($columns); $i++){
-                $strOut .= "\n\t\t"."private $". ($columns[$i]) .";";//Nesse loop estão sendo criados os atributos da classe com base na quantidade de colunas existentes
+                $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
+      			
+      			//<input type="text" class="form-control" id="descricao"  name="descricao"></div>
+    		
             }
-            
-            $strOut .= "\n\n\t\t"."function __construct( $". (implode(", $", $columns)) ."){"; //Aqui estamos criando o construct da nossa classe, ou seja, o primeiro script a ser executado pelo servidor e nele vamos passar a variável columns que está armazenando os parâmetros que futuramente serão alteradas pelo form
-            for ($i=0; $i < count($columns); $i++){ //Esse for basicamente vai criar os sets dos respectivos atributos que serão manipulados pelo objeto que receberá os posts vindos do formulário
-                $strOut .= "\n\t\t\t ".'$this->set'.ucfirst($columns[$i])."( $".($columns[$i])." );"; // O .= é o mesmo que fazer $strOut = $strOut + "Outras informações". Lembrando que o uc first faz o caracter inicial ser maiusculo
-            }
-            $strOut .= "\n\t\t}\n"; //Quebra de linha e tabs
-            
-            $strOut .= "\n\t\t"."public function toArray(){"; //Aqui estamos fazendo uso da mesma variável responsável pela saída de strings e nesse caso vamos criar uma função que exibe o valor dos atributos da classe, através de um get, em formato de matriz. O nome é bem auto explicativo "para Matriz"
-            $strOut .= "\n\t\t\t return array(";
-            for ($i=0; $i < count($columns); $i++){
-                $strOut .= "\n\t\t\t\t ".'$this->get'.ucfirst($columns[$i])."()"; //Aqui temos os gets de cada um dos meus atributos
-                $strOut .= ((($i+1) == count($columns))?"":","); //e esse daqui é um dos verificadores mais importantes, pq ele analisa o elemento sucessor do meu index e iguala ele a quantidade de classes, sendo que se o get sucessor for o último, não acrescenta ",", mas se ele não for, deve ser acrescentado ","
-            }
-            $strOut .= "\n\t\t\t);";
-            $strOut .= "\n\t\t}\n";
-            
-            
-            $strOut .= "\n\t\t"."public function toString(){";
-            $strOut .= "\n\t\t\t return(";
-            $strOut .= '"\n\t\t\t\t". implode(", ",$this->toArray()));'; //Coloca os valores da string separados por "," que é o mesmo que ter os dados presentes nos meus gets organizados em formato de string
-            $strOut .= "\n\t\t}\n";
-            
-            for ($i=0; $i < count($columns); $i++){
-                $strOut .= "\n\t\t"."public function set".ucfirst($columns[$i]) ."( $".($columns[$i]) ." ){";
-                $strOut .= "\n\t\t\t ".'$this->'.($columns[$i]) ." = $".($columns[$i]) .";" ;  //set
-                $strOut .= "\n\t\t}\n";
-                
-                $strOut .= "\n\t\t"."public function get".ucfirst($columns[$i]) ."(){";
-                $strOut .= "\n\t\t\t ".' return( $this->'.($columns[$i]) ." );"; //get
-                $strOut .= "\n\t\t}\n";
-                
-            }
-            $strOut .= "\n\t}\n";
-            $strOut .= "\n\n?>";
-            $filename =  $this->getPath()."/".ucfirst($tableName).".class.php"; //Essa variável me traz o caminho do arquivo e o seu nome com letra maiúscula
-            file_put_contents($filename, $strOut); //Isso daqui escreve dados dentro de um arquivo, ou seja, vai utilizar o filename para escrever seu caminho e o titulo do arquivo e o strout é a variável que armazenou toda a saída strings e vai repassar pro arquivo class.php
-            
-            $strOut = ""; //depois eu deixo ela nula para que não ocorra conflito e o processo possa ser feito com outras classes
             
         }
-        $this->instrucao();
-        
-    }
-    
-    public function instrucao() {
-        echo "\n <br>Não se esqueça de alterar os dados de conexão no arquivo 'DBConnection.class.php'";
-        echo "\n <br>Para Manipular corretamenta os arquivos adicione seu usuário ao grupo do Apache:";
-        echo "<pre>\n\t\t".'sudo adduser $USER www-data;</pre>';
-        echo "\n Arquivos gerados em ". getcwd().$this->path;
-        
-        
-    }
 
-    
+    }
     
     public function getPath(){
         return $this->path;
@@ -160,8 +133,8 @@ class ClassBuilder{
 
 // Testando ClassBuilder.class.php
 
-$classBuilder = new ClassBuilder("classes", "lojinha");
-$classBuilder->make();
 
+$class = new FormBuilder("forms", "lojinha");
+$class->makeForm();
 
 ?>
