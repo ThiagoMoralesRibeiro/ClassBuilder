@@ -90,17 +90,43 @@ class FormBuilder{
 
             while ($linhaColumns = mysqli_fetch_assoc($columnsData)) { //Lembrando que isso só será executado enquanto ainda houver uma  quantidade de linhas da matriz para ser retornada e se refere aos titulos das colunas da classe que está sendo criada. Agora chegou a hora de criar os atributos da minha classe e as colunas da minha classe serão esses atributos
                 array_push($columns, $linhaColumns['COLUMN_NAME']);
-                //echo $linhaColumns['COLUMN_NAME']."<br>";
-                //var_dump($columns);    
-            }
+                echo $linhaColumns['COLUMN_TYPE']."<br><br>";   
 
-            for ($i=0; $i < count($columns); $i++){
-                $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
-      			
-      			//<input type="text" class="form-control" id="descricao"  name="descricao"></div>
-    		
+                for ($i=0; $i < count($columns); $i++){
+                    $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
+                    if ($linhaColumns['DATA_TYPE'] == 'int'){
+                       $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'varchar'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'date'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'decimal'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'text'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'datetime'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    if ($linhaColumns['DATA_TYPE'] == 'char'){
+                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                    }
+
+                    
+                      
+                }
             }
-            
+    
         }
 
     }

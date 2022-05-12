@@ -17,8 +17,9 @@
 		}
 
 		public function toString(){
-			 return("\n\t\t\t\t". implode(", ",$this->toArray()));
+			 return("\n\t\t\t\t". implode(", " , $this->toArray()));
 		}
+
 
 		public function setIdCategoria( $idCategoria ){
 			 $this->idCategoria = $idCategoria;
