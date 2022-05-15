@@ -65,7 +65,7 @@ class FormBuilder{
         while ($linhaAtualTables = mysqli_fetch_assoc($tables)) {
 
             $strOut .= "<!DOCTYPE html>";
-            $strOut .=  "\n". "<html lang='pt-br'>";
+            $strOut .=  "\n". "<html lang='en'>";
             $strOut .=  "\n"."<head>";
             $strOut .=  "\n\t"."<title>Form PHP</title>";
             $strOut .=  "\n\t"."<meta charset='utf-8'>";
@@ -103,7 +103,7 @@ class FormBuilder{
                         case 'varchar':
                             $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
                             break;
-    
+
                         case 'date':
                             $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
                             break;
@@ -142,18 +142,17 @@ class FormBuilder{
                             break;
                         case 'time':
                             $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                            break; 
-                    }      
-
-                }    
-            }    
-        }
-            $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div>"."\n"."</body>"."\n"."</html>";   
-            $filename =  $this->getPath()."/".ucfirst($tableName).".form.php"; 
+                            break;       
+                    }
+                
+                }
+            
+            }
+            $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div";   
+            $filename =  $this->getPath()."/".ucfirst($tableName).".form.php"; //Essa variável me traz o caminho do arquivo e o seu nome com letra maiúscula
             file_put_contents($filename, $strOut);
-            $strOut = "";
+        }
     }
-    
     
     public function getPath(){
         return $this->path;
@@ -184,7 +183,7 @@ class FormBuilder{
 // Testando ClassBuilder.class.php
 
 
-$class = new FormBuilder("form", "lojinha");
+$class = new FormBuilder("forms", "lojinha");
 $class->makeForm();
 
 ?>
