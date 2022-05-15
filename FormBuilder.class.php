@@ -184,7 +184,7 @@ class FormBuilder{
 // Testando ClassBuilder.class.php
 
 
-$class = new FormBuilder("forms", "lojinha");
+$class = new FormBuilder("form", "lojinha");
 $class->makeForm();
 
 ?>
