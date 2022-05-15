@@ -94,41 +94,59 @@ class FormBuilder{
 
                 for ($i=0; $i < count($columns); $i++){
                     $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
-                    if ($linhaColumns['DATA_TYPE'] == 'int'){
-                       $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
 
-                    if ($linhaColumns['DATA_TYPE'] == 'varchar'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
+                    switch (strtolower($linhaColumns['DATA_TYPE'])) {
+                        case 'int':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        
+                        case 'varchar':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
 
-                    if ($linhaColumns['DATA_TYPE'] == 'date'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
-
-                    if ($linhaColumns['DATA_TYPE'] == 'decimal'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
-
-                    if ($linhaColumns['DATA_TYPE'] == 'text'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
-
-                    if ($linhaColumns['DATA_TYPE'] == 'datetime'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
-
-                    if ($linhaColumns['DATA_TYPE'] == 'char'){
-                        $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
-                    }
-
-                    
-                      
+                        case 'date':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'decimal':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'text':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'datetime':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'char':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'longtext':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'bigint':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'tinyint':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'smallint':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'double':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'enum':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'mediumtext':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;
+                        case 'time':
+                            $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            break;       
+                    }    
                 }
             }
-    
         }
-
     }
     
     public function getPath(){
