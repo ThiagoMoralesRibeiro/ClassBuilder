@@ -143,9 +143,14 @@ class FormBuilder{
                         case 'time':
                             $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
                             break;       
-                    }    
+                    }
+                
                 }
+            
             }
+            $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div";   
+            $filename =  $this->getPath()."/".ucfirst($tableName).".form.php"; 
+            file_put_contents($filename, $strOut);
         }
     }
     
