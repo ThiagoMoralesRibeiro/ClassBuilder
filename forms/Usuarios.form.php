@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Categorias>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+				<input type= 'number' class='form-control' id= 'idCategoria'  name='idCategoria'></div>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+				<input type= 'text' class='form-control' id= 'descricao'  name='descricao'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Estoque>
+			<div class='form-group'>
+				<label for='desc'>IdEstoque</label>
+				<input type= 'number' class='form-control' id= 'idEstoque'  name='idEstoque'></div>
+			<div class='form-group'>
+				<label for='desc'>IdProduto</label>
+			<div class='form-group'>
+				<label for='desc'>IdProduto</label>
+				<input type= 'number' class='form-control' id= 'idProduto'  name='idProduto'></div>
+			<div class='form-group'>
+				<label for='desc'>DtEntrada</label>
+			<div class='form-group'>
+				<label for='desc'>DtEntrada</label>
+			<div class='form-group'>
+				<label for='desc'>DtEntrada</label>
+				<input type= 'date' class='form-control' id= 'dtEntrada'  name='dtEntrada'></div>
+			<div class='form-group'>
+				<label for='desc'>Quantidade</label>
+			<div class='form-group'>
+				<label for='desc'>Quantidade</label>
+			<div class='form-group'>
+				<label for='desc'>Quantidade</label>
+			<div class='form-group'>
+				<label for='desc'>Quantidade</label>
+				<input type= 'number' class='form-control' id= 'quantidade'  name='quantidade'></div>
+			<div class='form-group'>
+				<label for='desc'>DtFabricacao</label>
+			<div class='form-group'>
+				<label for='desc'>DtFabricacao</label>
+			<div class='form-group'>
+				<label for='desc'>DtFabricacao</label>
+			<div class='form-group'>
+				<label for='desc'>DtFabricacao</label>
+			<div class='form-group'>
+				<label for='desc'>DtFabricacao</label>
+				<input type= 'date' class='form-control' id= 'dtFabricacao'  name='dtFabricacao'></div>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtVencimento</label>
+				<input type= 'date' class='form-control' id= 'dtVencimento'  name='dtVencimento'></div>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+			<div class='form-group'>
+				<label for='desc'>NfCompra</label>
+				<input type= 'text' class='form-control' id= 'nfCompra'  name='nfCompra'></div>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoCompra</label>
+				<input type= 'number' class='form-control' id= 'precoCompra'  name='precoCompra'></div>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+			<div class='form-group'>
+				<label for='desc'>IcmsCompra</label>
+				<input type= 'number' class='form-control' id= 'icmsCompra'  name='icmsCompra'></div>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+			<div class='form-group'>
+				<label for='desc'>PrecoVenda</label>
+				<input type= 'number' class='form-control' id= 'precoVenda'  name='precoVenda'></div>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+			<div class='form-group'>
+				<label for='desc'>QtdVendida</label>
+				<input type= 'number' class='form-control' id= 'qtdVendida'  name='qtdVendida'></div>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>QtdOcorrencia</label>
+				<input type= 'number' class='form-control' id= 'qtdOcorrencia'  name='qtdOcorrencia'></div>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+			<div class='form-group'>
+				<label for='desc'>Ocorrencia</label>
+				<input type= 'text' class='form-control' id= 'ocorrencia'  name='ocorrencia'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Institucional>
+			<div class='form-group'>
+				<label for='desc'>IdInstituicao</label>
+				<input type= 'number' class='form-control' id= 'idInstituicao'  name='idInstituicao'></div>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+				<input type= 'text' class='form-control' id= 'nome'  name='nome'></div>
+			<div class='form-group'>
+				<label for='desc'>Cpf_cnpj</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf_cnpj</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf_cnpj</label>
+				<input type= 'text' class='form-control' id= 'cpf_cnpj'  name='cpf_cnpj'></div>
+			<div class='form-group'>
+				<label for='desc'>TipoPessoa</label>
+			<div class='form-group'>
+				<label for='desc'>TipoPessoa</label>
+			<div class='form-group'>
+				<label for='desc'>TipoPessoa</label>
+			<div class='form-group'>
+				<label for='desc'>TipoPessoa</label>
+				<input type= 'text' class='form-control' id= 'tipoPessoa'  name='tipoPessoa'></div>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+				<input type= 'text' class='form-control' id= 'endereco'  name='endereco'></div>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+				<input type= 'text' class='form-control' id= 'bairro'  name='bairro'></div>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+				<input type= 'text' class='form-control' id= 'cidade'  name='cidade'></div>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+				<input type= 'text' class='form-control' id= 'uf'  name='uf'></div>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+				<input type= 'text' class='form-control' id= 'cep'  name='cep'></div>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+				<input type= 'text' class='form-control' id= 'telefone'  name='telefone'></div>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+				<input type= 'text' class='form-control' id= 'email'  name='email'></div>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+			<div class='form-group'>
+				<label for='desc'>Logo</label>
+				<input type= 'text' class='form-control' id= 'logo'  name='logo'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Itemspedido>
+			<div class='form-group'>
+				<label for='desc'>IdItemPedido</label>
+				<input type= 'number' class='form-control' id= 'idItemPedido'  name='idItemPedido'></div>
+			<div class='form-group'>
+				<label for='desc'>Ordem</label>
+			<div class='form-group'>
+				<label for='desc'>Ordem</label>
+				<input type= 'number' class='form-control' id= 'ordem'  name='ordem'></div>
+			<div class='form-group'>
+				<label for='desc'>IdPedido</label>
+			<div class='form-group'>
+				<label for='desc'>IdPedido</label>
+			<div class='form-group'>
+				<label for='desc'>IdPedido</label>
+				<input type= 'number' class='form-control' id= 'idPedido'  name='idPedido'></div>
+			<div class='form-group'>
+				<label for='desc'>IdEstoque</label>
+			<div class='form-group'>
+				<label for='desc'>IdEstoque</label>
+			<div class='form-group'>
+				<label for='desc'>IdEstoque</label>
+			<div class='form-group'>
+				<label for='desc'>IdEstoque</label>
+				<input type= 'number' class='form-control' id= 'idEstoque'  name='idEstoque'></div>
+			<div class='form-group'>
+				<label for='desc'>QtdItem</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItem</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItem</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItem</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItem</label>
+				<input type= 'number' class='form-control' id= 'qtdItem'  name='qtdItem'></div>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+				<input type= 'date' class='form-control' id= 'dtDevolucao'  name='dtDevolucao'></div>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+				<input type= 'text' class='form-control' id= 'motivoDevolucao'  name='motivoDevolucao'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Nivelusuarios>
+			<div class='form-group'>
+				<label for='desc'>IdNivelUsuario</label>
+				<input type= 'number' class='form-control' id= 'idNivelUsuario'  name='idNivelUsuario'></div>
+			<div class='form-group'>
+				<label for='desc'>Nivel</label>
+			<div class='form-group'>
+				<label for='desc'>Nivel</label>
+				<input type= 'text' class='form-control' id= 'nivel'  name='nivel'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Pedidos>
+			<div class='form-group'>
+				<label for='desc'>IdPedido</label>
+				<input type= 'number' class='form-control' id= 'idPedido'  name='idPedido'></div>
+			<div class='form-group'>
+				<label for='desc'>IdUsuario</label>
+			<div class='form-group'>
+				<label for='desc'>IdUsuario</label>
+				<input type= 'number' class='form-control' id= 'idUsuario'  name='idUsuario'></div>
+			<div class='form-group'>
+				<label for='desc'>DtPedido</label>
+			<div class='form-group'>
+				<label for='desc'>DtPedido</label>
+			<div class='form-group'>
+				<label for='desc'>DtPedido</label>
+				<input type= 'date' class='form-control' id= 'dtPedido'  name='dtPedido'></div>
+			<div class='form-group'>
+				<label for='desc'>DtPagamento</label>
+			<div class='form-group'>
+				<label for='desc'>DtPagamento</label>
+			<div class='form-group'>
+				<label for='desc'>DtPagamento</label>
+			<div class='form-group'>
+				<label for='desc'>DtPagamento</label>
+				<input type= 'date' class='form-control' id= 'dtPagamento'  name='dtPagamento'></div>
+			<div class='form-group'>
+				<label for='desc'>DtNotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>DtNotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>DtNotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>DtNotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>DtNotaFiscal</label>
+				<input type= 'date' class='form-control' id= 'dtNotaFiscal'  name='dtNotaFiscal'></div>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+			<div class='form-group'>
+				<label for='desc'>NotaFiscal</label>
+				<input type= 'text' class='form-control' id= 'notaFiscal'  name='notaFiscal'></div>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+			<div class='form-group'>
+				<label for='desc'>DtEnvio</label>
+				<input type= 'date' class='form-control' id= 'dtEnvio'  name='dtEnvio'></div>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+			<div class='form-group'>
+				<label for='desc'>DtRecebimento</label>
+				<input type= 'date' class='form-control' id= 'dtRecebimento'  name='dtRecebimento'></div>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+			<div class='form-group'>
+				<label for='desc'>TipoFrete</label>
+				<input type= 'number' class='form-control' id= 'tipoFrete'  name='tipoFrete'></div>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+			<div class='form-group'>
+				<label for='desc'>RastreioFrete</label>
+				<input type= 'text' class='form-control' id= 'rastreioFrete'  name='rastreioFrete'></div>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+			<div class='form-group'>
+				<label for='desc'>Entregaendereco</label>
+				<input type= 'text' class='form-control' id= 'entregaendereco'  name='entregaendereco'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaNumero</label>
+				<input type= 'text' class='form-control' id= 'entregaNumero'  name='entregaNumero'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCompl</label>
+				<input type= 'text' class='form-control' id= 'entregaCompl'  name='entregaCompl'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaBairro</label>
+				<input type= 'text' class='form-control' id= 'entregaBairro'  name='entregaBairro'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCidade</label>
+				<input type= 'text' class='form-control' id= 'entregaCidade'  name='entregaCidade'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaUF</label>
+				<input type= 'text' class='form-control' id= 'entregaUF'  name='entregaUF'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaCEP</label>
+				<input type= 'text' class='form-control' id= 'entregaCEP'  name='entregaCEP'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaTelefone</label>
+				<input type= 'text' class='form-control' id= 'entregaTelefone'  name='entregaTelefone'></div>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+			<div class='form-group'>
+				<label for='desc'>EntregaRefer</label>
+				<input type= 'text' class='form-control' id= 'entregaRefer'  name='entregaRefer'></div>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+			<div class='form-group'>
+				<label for='desc'>ValorTotal</label>
+				<input type= 'number' class='form-control' id= 'valorTotal'  name='valorTotal'></div>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+			<div class='form-group'>
+				<label for='desc'>QtdItems</label>
+				<input type= 'number' class='form-control' id= 'qtdItems'  name='qtdItems'></div>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>DtDevolucao</label>
+				<input type= 'date' class='form-control' id= 'dtDevolucao'  name='dtDevolucao'></div>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+			<div class='form-group'>
+				<label for='desc'>MotivoDevolucao</label>
+				<input type= 'text' class='form-control' id= 'motivoDevolucao'  name='motivoDevolucao'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Produtos>
+			<div class='form-group'>
+				<label for='desc'>IdProduto</label>
+				<input type= 'number' class='form-control' id= 'idProduto'  name='idProduto'></div>
+			<div class='form-group'>
+				<label for='desc'>Fabricante</label>
+			<div class='form-group'>
+				<label for='desc'>Fabricante</label>
+				<input type= 'text' class='form-control' id= 'fabricante'  name='fabricante'></div>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+				<input type= 'text' class='form-control' id= 'nome'  name='nome'></div>
+			<div class='form-group'>
+				<label for='desc'>Marca</label>
+			<div class='form-group'>
+				<label for='desc'>Marca</label>
+			<div class='form-group'>
+				<label for='desc'>Marca</label>
+			<div class='form-group'>
+				<label for='desc'>Marca</label>
+				<input type= 'text' class='form-control' id= 'marca'  name='marca'></div>
+			<div class='form-group'>
+				<label for='desc'>Modelo</label>
+			<div class='form-group'>
+				<label for='desc'>Modelo</label>
+			<div class='form-group'>
+				<label for='desc'>Modelo</label>
+			<div class='form-group'>
+				<label for='desc'>Modelo</label>
+			<div class='form-group'>
+				<label for='desc'>Modelo</label>
+				<input type= 'text' class='form-control' id= 'modelo'  name='modelo'></div>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+			<div class='form-group'>
+				<label for='desc'>IdCategoria</label>
+				<input type= 'number' class='form-control' id= 'idCategoria'  name='idCategoria'></div>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+			<div class='form-group'>
+				<label for='desc'>Descricao</label>
+				<input type= 'text' class='form-control' id= 'descricao'  name='descricao'></div>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+			<div class='form-group'>
+				<label for='desc'>UnidadeMedida</label>
+				<input type= 'text' class='form-control' id= 'unidadeMedida'  name='unidadeMedida'></div>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+			<div class='form-group'>
+				<label for='desc'>Largura</label>
+				<input type= 'number' class='form-control' id= 'largura'  name='largura'></div>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+			<div class='form-group'>
+				<label for='desc'>Altura</label>
+				<input type= 'number' class='form-control' id= 'altura'  name='altura'></div>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+			<div class='form-group'>
+				<label for='desc'>Profundidade</label>
+				<input type= 'number' class='form-control' id= 'profundidade'  name='profundidade'></div>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+			<div class='form-group'>
+				<label for='desc'>Peso</label>
+				<input type= 'number' class='form-control' id= 'peso'  name='peso'></div>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+			<div class='form-group'>
+				<label for='desc'>Cor</label>
+				<input type= 'text' class='form-control' id= 'cor'  name='cor'></div><!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Form PHP</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+	<script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+<body>
+	<div class='container m-5 p-5'>
+		<h2>Insert form</h2>
+		<form action='' method='post'  id= Usuarios>
+			<div class='form-group'>
+				<label for='desc'>IdUsuario</label>
+				<input type= 'number' class='form-control' id= 'idUsuario'  name='idUsuario'></div>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+			<div class='form-group'>
+				<label for='desc'>Email</label>
+				<input type= 'text' class='form-control' id= 'email'  name='email'></div>
+			<div class='form-group'>
+				<label for='desc'>Senha</label>
+			<div class='form-group'>
+				<label for='desc'>Senha</label>
+			<div class='form-group'>
+				<label for='desc'>Senha</label>
+				<input type= 'text' class='form-control' id= 'senha'  name='senha'></div>
+			<div class='form-group'>
+				<label for='desc'>IdNivelUsuario</label>
+			<div class='form-group'>
+				<label for='desc'>IdNivelUsuario</label>
+			<div class='form-group'>
+				<label for='desc'>IdNivelUsuario</label>
+			<div class='form-group'>
+				<label for='desc'>IdNivelUsuario</label>
+				<input type= 'number' class='form-control' id= 'idNivelUsuario'  name='idNivelUsuario'></div>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+			<div class='form-group'>
+				<label for='desc'>Nome</label>
+				<input type= 'text' class='form-control' id= 'nome'  name='nome'></div>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+			<div class='form-group'>
+				<label for='desc'>Cpf</label>
+				<input type= 'text' class='form-control' id= 'cpf'  name='cpf'></div>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+			<div class='form-group'>
+				<label for='desc'>Endereco</label>
+				<input type= 'text' class='form-control' id= 'endereco'  name='endereco'></div>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+			<div class='form-group'>
+				<label for='desc'>Bairro</label>
+				<input type= 'text' class='form-control' id= 'bairro'  name='bairro'></div>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+			<div class='form-group'>
+				<label for='desc'>Cidade</label>
+				<input type= 'text' class='form-control' id= 'cidade'  name='cidade'></div>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+			<div class='form-group'>
+				<label for='desc'>Uf</label>
+				<input type= 'text' class='form-control' id= 'uf'  name='uf'></div>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+			<div class='form-group'>
+				<label for='desc'>Cep</label>
+				<input type= 'text' class='form-control' id= 'cep'  name='cep'></div>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+			<div class='form-group'>
+				<label for='desc'>Telefone</label>
+				<input type= 'text' class='form-control' id= 'telefone'  name='telefone'></div>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+			<div class='form-group'>
+				<label for='desc'>Foto</label>
+				<input type= 'text' class='form-control' id= 'foto'  name='foto'></div>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+			<div class='form-group'>
+				<label for='desc'>Ativo</label>
+				<input type= 'text' class='form-control' id= 'ativo'  name='ativo'></div>
+			<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>
+		</form>
+	</div>
+</body>
+<\html>
