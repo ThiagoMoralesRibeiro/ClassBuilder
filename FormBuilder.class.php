@@ -65,7 +65,7 @@ class FormBuilder{
         while ($linhaAtualTables = mysqli_fetch_assoc($tables)) {
 
             $strOut .= "<!DOCTYPE html>";
-            $strOut .=  "\n". "<html lang='en'>";
+            $strOut .=  "\n". "<html lang='pt-br'>";
             $strOut .=  "\n"."<head>";
             $strOut .=  "\n\t"."<title>Form PHP</title>";
             $strOut .=  "\n\t"."<meta charset='utf-8'>";
@@ -90,12 +90,13 @@ class FormBuilder{
 
             while ($linhaColumns = mysqli_fetch_assoc($columnsData)) { //Lembrando que isso só será executado enquanto ainda houver uma  quantidade de linhas da matriz para ser retornada e se refere aos titulos das colunas da classe que está sendo criada. Agora chegou a hora de criar os atributos da minha classe e as colunas da minha classe serão esses atributos
                 array_push($columns, $linhaColumns['COLUMN_NAME']);
-                echo $linhaColumns['COLUMN_TYPE']."<br><br>";   
+                //echo $linhaColumns['COLUMN_TYPE']."<br><br>"; 
+                var_dump($columns);
 
-                for ($i=0; $i < count($columns); $i++){
+                for ($i=0; $i < count(array_unique($columns)); $i++){
                     $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
 
-                    switch (strtolower($linhaColumns['DATA_TYPE'])) {
+                    switch (strtolower($linhaColumns['COLUMN_TYPE'])) {
                         case 'int':
                             $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
                             break;
@@ -148,9 +149,11 @@ class FormBuilder{
                 }
             
             }
-            $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div";   
+
+            $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div>". "\n". "</body>". "\n". "</html>";   
             $filename =  $this->getPath()."/".ucfirst($tableName).".form.php"; //Essa variável me traz o caminho do arquivo e o seu nome com letra maiúscula
             file_put_contents($filename, $strOut);
+            $strOut ="";
         }
     }
     
