@@ -92,57 +92,58 @@ class FormBuilder{
                 array_push($columns, $linhaColumns['COLUMN_NAME']);
                 //echo $linhaColumns['COLUMN_TYPE']."<br><br>"; 
                 var_dump($columns);
+                $lineName = $linhaColumns['COLUMN_NAME'];
 
-                for ($i=0; $i < count(array_unique($columns)); $i++){
+                for ($i=0; $i < count($columns); $i++){
                     $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
 
-                    switch (strtolower($linhaColumns['COLUMN_TYPE'])) {
+                    switch (strtolower($linhaColumns['DATA_TYPE'])) {
                         case 'int':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         
                         case 'varchar':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
 
                         case 'date':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'decimal':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'text':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'datetime':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'char':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'longtext':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'bigint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'tinyint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'smallint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'double':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'enum':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'mediumtext':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;
                         case 'time':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$linhaColumns['COLUMN_NAME']."'  name='".$linhaColumns['COLUMN_NAME']."'></div>";
+                            $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
                             break;       
                     }
                 
