@@ -91,64 +91,38 @@ class FormBuilder{
             while ($linhaColumns = mysqli_fetch_assoc($columnsData)) { //Lembrando que isso só será executado enquanto ainda houver uma  quantidade de linhas da matriz para ser retornada e se refere aos titulos das colunas da classe que está sendo criada. Agora chegou a hora de criar os atributos da minha classe e as colunas da minha classe serão esses atributos
                 array_push($columns, $linhaColumns['COLUMN_NAME']);
                 //echo $linhaColumns['COLUMN_TYPE']."<br><br>"; 
-                var_dump($columns);
+                //var_dump($columns);
                 $lineName = $linhaColumns['COLUMN_NAME'];
 
-                for ($i=0; $i < count($columns); $i++){
-                    $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
-
-                    switch (strtolower($linhaColumns['DATA_TYPE'])) {
-                        case 'int':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        
-                        case 'varchar':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-
-                        case 'date':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'decimal':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'text':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'datetime':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'date' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'char':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'longtext':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'bigint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'tinyint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'smallint':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'double':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'enum':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'text' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'mediumtext':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'number' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;
-                        case 'time':
-                            $strOut.= "\n\t\t\t\t"."<input type= 'time' class='form-control' id= '".$lineName."'  name='".$lineName."'></div>";
-                            break;       
-                    }
+                $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
                 
+                switch ( strtoupper( $linhaColumns['DATA_TYPE'])) {
+                    case  'BIGINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'INT': return ("<input type='number ' name='$lineName' class='form-control' >");break;
+                    case  'SMALLINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'TINYINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'BIT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'DATETIME': return ("<input type='date' ='$lineName' class='form-control' >");break;
+                    case  'SMALLDATETIME ': return ("<input type='date' name='$lineName' class='form-control' >");break;
+                    case  'TIME': return ("<input type='Time' name='$lineName' class='form-control' >");break;
+                    case  'REAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'FLOAT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'DECIMAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'NUMERIC': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'MONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'SMALLMONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
+                    case  'TEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'NTEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'CHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'NCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    default : return ("<input type='text' name='$lineName' class='form-control' >");break;
+                    
                 }
-            
+
             }
 
             $strOut.= "\n\t\t\t"."<button type='submit' class='btn btn-dark' id='btn-confirma'>Submit</button>". "\n\t\t"."</form>"."\n\t"."</div>". "\n". "</body>". "\n". "</html>";   
@@ -181,7 +155,9 @@ class FormBuilder{
     public function setConn($conn){
         $this->conn = $conn;
     }
-
+    public function makeInputs($mySqlType, $inputName){
+        
+    }
 }
 
 // Testando ClassBuilder.class.php
