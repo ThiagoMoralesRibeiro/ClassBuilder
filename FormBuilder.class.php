@@ -86,42 +86,16 @@ class FormBuilder{
             //echo "<hr> TABLE_NAME:" . $tableName;
             $columnsData = $this->listTableColumns( $tableName );
             //var_dump($columnsData);
-            $columns = array();  
 
             while ($linhaColumns = mysqli_fetch_assoc($columnsData)) { //Lembrando que isso só será executado enquanto ainda houver uma  quantidade de linhas da matriz para ser retornada e se refere aos titulos das colunas da classe que está sendo criada. Agora chegou a hora de criar os atributos da minha classe e as colunas da minha classe serão esses atributos
-                array_push($columns, $linhaColumns['COLUMN_NAME']);
                 //echo $linhaColumns['COLUMN_TYPE']."<br><br>"; 
                 //var_dump($columns);
-                $lineName = $linhaColumns['COLUMN_NAME'];
-
-                $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>";
                 
-                switch ( strtoupper( $linhaColumns['DATA_TYPE'])) {
-                    case  'BIGINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'INT': return ("<input type='number ' name='$lineName' class='form-control' >");break;
-                    case  'SMALLINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'TINYINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'BIT': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'DATETIME': return ("<input type='date' ='$lineName' class='form-control' >");break;
-                    case  'SMALLDATETIME ': return ("<input type='date' name='$lineName' class='form-control' >");break;
-                    case  'TIME': return ("<input type='Time' name='$lineName' class='form-control' >");break;
-                    case  'REAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'FLOAT': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'DECIMAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'NUMERIC': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'MONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'SMALLMONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
-                    case  'TEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'NTEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'CHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'NCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    default : return ("<input type='text' name='$lineName' class='form-control' >");break;
-                    
-                }
+
+                $strOut.="\n\t\t\t"."<div class='form-group'>"."\n\t\t\t\t"."<label for='desc'>". ucfirst($linhaColumns['COLUMN_NAME']) ."</label>"."\n\t\t\t\t".$this->makeInputs($linhaColumns['DATA_TYPE'], $linhaColumns['COLUMN_NAME'])."\n\t\t\t"."</div>";
+               
+                
+                
 
             }
 
@@ -155,7 +129,33 @@ class FormBuilder{
     public function setConn($conn){
         $this->conn = $conn;
     }
-    public function makeInputs($mySqlType, $inputName){
+    public function makeInputs($mySqlType, $lineName){
+        switch ( strtoupper($mySqlType)) {
+            case  'BIGINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'INT': return ("<input type='number ' name='$lineName' class='form-control' >");break;
+            case  'SMALLINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'TINYINT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'BIT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'DATETIME': return ("<input type='date' ='$lineName' class='form-control' >");break;
+            case  'SMALLDATETIME ': return ("<input type='date' name='$lineName' class='form-control' >");break;
+            case  'TIME': return ("<input type='Time' name='$lineName' class='form-control' >");break;
+            case  'REAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'FLOAT': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'DECIMAL': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'NUMERIC': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'MONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'SMALLMONEY': return ("<input type='number' name='$lineName' class='form-control' >");break;
+            case  'TEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'NTEXT': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'CHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'NCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'VARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            case  'NVARCHAR': return ("<input type='text' name='$lineName' class='form-control' >");break;
+            default : return ("<input type='text' name='$lineName' class='form-control' >");break;
+            
+        }
         
     }
 }
