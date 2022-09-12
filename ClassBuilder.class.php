@@ -14,7 +14,7 @@ class ClassBuilder{
         $this->setConn( new DBConnection() );// "Setando" o valor do atributo conn. Basicamente, ele tem a função de instanciar a classe DBCONNECTION e permitir que seja gerada uma conexão
         
         if ( ! file_exists( $this->getPath() )) {//Basicamente eu estou vendo se existe algum arquivo ou diretório presente no atributo path do meu objeto. Nesse caso, em específico, estou vendo se eu já tenho o diretório para meus arquivos que serão criados
-            mkdir( $this->getPath(), 0777, true);//Caso não tiver diretório criado, eu crio através dessa consição
+            mkdir( $this->getPath(), 0777, true);//Caso não tiver diretório criado, eu crio através dessa condição
         }
     }
     
